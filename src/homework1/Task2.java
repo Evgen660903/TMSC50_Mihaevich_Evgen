@@ -11,7 +11,7 @@ public class Task2 {
         int numFib2 = 1;
         int numFib = 0;
         System.out.println(" Числа Фибоначчи лежащие левее " +  x);
-        for (; numFib < x; ) {
+        while ( numFib < x) {
             System.out.println(numFib);
             numFib = numFib1 + numFib2;
             if (numFib == 1 && numFib < x) {
@@ -19,8 +19,6 @@ public class Task2 {
             }
             numFib1 = numFib2;
             numFib2 = numFib;
-
-            //System.out.println(numFib);}
         }
     }
 }
